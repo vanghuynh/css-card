@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   font-family: sans-serif;
@@ -24,6 +25,7 @@ body {
 /* product information */
 .price {
   font-size: 24px;
+  float: left;
 }
 
 .shipping {
@@ -32,6 +34,10 @@ body {
   font-weight: bold;
   color: #777;
   margin-bottom: 15px;
+  float: right;
+}
+.product-description {
+  clear: both;
 }
 .more-info {
   /* margin-bottom: 15px; */
@@ -122,4 +128,28 @@ body {
 
 .color-red {
   background-color: red;
+}
+
+.sale-banner {
+  /* background-color: red; */
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.product-image {
+  float: left;
+}
+.product-info {
+  width: 243px;
+  float: left;
+  margin-left: 40px;
+  padding-top: 20px;
+  /* 825 - 8 - 250 - 40 -40 = 243 */
+}
+.product-details {
+  float: left;
+  width: 243px;
+  margin-left: 40px;
 }
