@@ -31,7 +31,6 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   color: #777;
-  margin-bottom: 15px;
 }
 .more-info {
   /* margin-bottom: 15px; */
@@ -54,8 +53,6 @@ body {
 .details-title {
   text-transform: uppercase;
   font-size: 16px;
-  margin-bottom: 15px;
-  margin-top: 15px;
 }
 .details-list {
   list-style: square;
@@ -107,10 +104,10 @@ body {
 .item {
   width: 20px;
   height: 20px;
-  margin-right: 10px;
-  display: inline-block;
+  /* margin-right: 10px;
+  display: inline-block; */
   /* height and with, padding, margin top, bottom not apply for inline elements */
-  margin-top: 5px;
+  /* margin-top: 5px; */
 }
 .color-black {
   background-color: black;
@@ -122,4 +119,25 @@ body {
 
 .color-red {
   background-color: red;
+}
+.sale-banner {
+  display: flex;
+  gap: 10px;
+}
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.product-color {
+  display: flex;
+  gap: 10px;
+}
+.product-info {
+  flex: 1;
+}
+.product-details {
+  float: 1;
 }
