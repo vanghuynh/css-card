@@ -20,6 +20,7 @@ body {
   text-transform: uppercase;
   background-color: #f7f7f7;
   padding: 15px;
+  margin-bottom: 10px;
 }
 /* product information */
 .price {
@@ -31,7 +32,6 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   color: #777;
-  margin-bottom: 15px;
 }
 .more-info {
   /* margin-bottom: 15px; */
@@ -43,7 +43,7 @@ body {
   /* margin-bottom: 15px; */
   /* a is a inline element, margin bottom won't work */
   display: inline-block;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 
 .more-info:hover,
@@ -107,10 +107,10 @@ body {
 .item {
   width: 20px;
   height: 20px;
-  margin-right: 10px;
-  display: inline-block;
+  /* margin-right: 10px; */
+  /* display: inline-block; */
   /* height and with, padding, margin top, bottom not apply for inline elements */
-  margin-top: 5px;
+  /* margin-top: 5px; */
 }
 .color-black {
   background-color: black;
@@ -122,4 +122,29 @@ body {
 
 .color-red {
   background-color: red;
+}
+
+.sale-banner {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.select-color {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.price-shipping {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  align-items: center;
+}
+.product-info {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
