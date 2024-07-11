@@ -31,7 +31,6 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   color: #777;
-  margin-bottom: 15px;
 }
 .more-info {
   /* margin-bottom: 15px; */
@@ -107,10 +106,10 @@ body {
 .item {
   width: 20px;
   height: 20px;
-  margin-right: 10px;
-  display: inline-block;
+  /* margin-right: 10px;
+  display: inline-block; */
   /* height and with, padding, margin top, bottom not apply for inline elements */
-  margin-top: 5px;
+  /* margin-top: 5px; */
 }
 .color-black {
   background-color: black;
@@ -122,4 +121,24 @@ body {
 
 .color-red {
   background-color: red;
+}
+
+.product-banner {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  gap: 20px;
+}
+.price-shipping {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.select-color {
+  display: flex;
+  gap: 10px;
+}
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
